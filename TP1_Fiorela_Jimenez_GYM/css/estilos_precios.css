@@ -1,0 +1,247 @@
+#logo-svg {
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: dibujarLogo 2s ease-out forwards;
+}
+
+@keyframes dibujarLogo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Base del menu general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #111;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Menu desplegable */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #935ac6;
+}
+
+.dropdown .mega-menu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* mostrar menu al pasar el mause*/
+
+.dropdown:hover .mega-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Efectos tooltips y toggle*/
+main h1 {
+    text-align: center;
+  }
+  
+.precios {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .toggle-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .toggle-contenedor span.activo {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  
+  /* Toggle estilo switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+  }
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Tabla de precios */
+  .tabla-precios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .plan {
+    background: #9569b3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .plan:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .plan.destacado {
+    border: 2px solid #4caf50;
+    background-color: #52467b;
+  }
+
+  .plan button {
+    background-color: #040304;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .plan button:hover {
+    background-color: #181a55;
+  }
+  
+  
+  
+  /* Tooltips */
+  .tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #fff;
+  }
+  
+  .tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+    z-index: 10;
+  }
+  
+  .tooltip:hover::after {
+    opacity: 1;
+  }
+
+   /* footer */
+   
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f00; /* o el color principal de tu gym */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+  

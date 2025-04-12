@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos_blog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+          <div class="logo">
+            <!-- SVG o texto del logo -->
+            <svg id="logo-svg" width="50" height="50" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#f44336" stroke-width="5" fill="none" />
+              <text x="50" y="55" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">ACTIVATE</text>
+            </svg>
+          </div>
+      
+          <nav>
+            <ul class="menu">
+              <li><a href="Index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#">Menu</a>
+                <ul class="mega-menu">
+                  <li><a href="clases.html">Clases</a></li>
+                  <li><a href="entrenadores.html">Entrenadores</a></li>
+                  <li><a href="precios.html">Precios</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+    <main>
+        <section class="blog">
+
+            <!-- Newspaper -->
+            <div class="post-wrapper">
+                <article class="post">
+                    <h2>Consejos para mejorar tu rendimiento</h2>
+                    <p class="meta">#Nutrición #Entrenamiento</p>
+                    <p>Para que puedas mejrorar tu rendimiento debes tener una rutina adecuada a tus objetivos, ademas 
+                        una dieta para que veas los resultados lo mas antes, sin mas tambien debes tener una buena hidratacion, y descanso
+                    </p>
+                </article>
+
+                <!-- Comentarios -->
+                <div class="comentarios">
+                    <h4>Comentarios</h4>
+                    <div class="comentario">
+                        <div class="avatar"></div>
+                        <p><strong>Laura:</strong> ¡Muy útil la info!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-wrapper">
+                <article class="post">
+                    <h2>Rutinas para principiantes</h2>
+                    <p class="meta">#Musculación #Inicio</p>
+                    <p>Si eres principiante, debes saber que primero debes empezar con pesos ligeros, y ir subiendo de apoco
+                        ademas recordar que para que crezca el musculo, lo debes hacer descansar
+                    </p>
+                </article>
+
+                <!-- comentarios -->
+                <div class="comentarios">
+                    <h4>Comentarios</h4>
+                    <div class="comentario">
+                        <div class="avatar"></div>
+                        <p><strong>Sofia:</strong> Muy interesante lo voy anotar !!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-wrapper">
+                <article class="post">
+                    <h2>Consejos para Comenzar una dieta</h2>
+                    <p class="meta">#Nutricion #Inicio</p>
+                    <p>Al empezar una dieta es empezar de apoco, es ir dejando y reemplazando los alimentos 
+                        por algo mas sano, como por ejemplo el desayuno, empezar a remplazarlo por yogurt, entre otros alimentos que te aporten
+                        proteina y energia para cpmenzar tu dia.
+                    </p>
+                </article>
+
+                <!-- comentarios -->
+                <div class="comentarios">
+                    <h4>Comentarios</h4>
+                    <div class="comentario">
+                        <div class="avatar"></div>
+                        <p><strong>Alejandro:</strong> me ayuda bastante este consejo !!</p>
+                    </div>
+                    <div class="comentario">
+                        <div class="avatar"></div>
+                        <p><strong>Alexa:</strong>Empeze a seguir este consejo y la verdad que me sirvio de mucho!!</p>
+                    </div>
+                </div>
+            </div>
+          
+          </section>
+          
+    </main>
+    <footer class="footer">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61574089408111"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/activatecrossfit_tcv?igsh=MWcwOThyaHNla3Nsaw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 Activate. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>
+        const posts = document.querySelectorAll('.post-wrapper');
+      
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              entry.target.classList.add('visible');
+            }
+          });
+        }, {
+          threshold: 0.2
+        });
+      
+        posts.forEach(post => {
+          observer.observe(post);
+        });
+      </script>
+      
+</body>
+</html>
