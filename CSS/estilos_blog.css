@@ -1,0 +1,228 @@
+#logo-svg {
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: dibujarLogo 2s ease-out forwards;
+}
+
+@keyframes dibujarLogo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Base del menu general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #111;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Menu desplegable */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #935ac6;
+}
+
+.dropdown .mega-menu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* mostrar menu al pasar el mause*/
+
+.dropdown:hover .mega-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* newspaper */
+
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .post-wrapper {
+    background: #e8d0fb;
+    padding: 1.5rem;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .post-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .post h2 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .meta {
+    color: #5006fd;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .post p {
+    color: #010101;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .post-wrapper article {
+    margin-bottom: 1rem;
+  }
+  
+
+ /* Comentario conn avatares */  
+ .comentario {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .comentario p {
+    color: #333;
+  }
+  .comentarios {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  .comentarios h4 {
+    color: #430567;
+    margin-bottom: 0.5rem;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #3d0e5d, #36184f);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    animation: bounceIn 0.6s ease;
+  }
+  
+  .avatar::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  @media (max-width: 500px) {
+    .post h2 {
+      font-size: 1.2rem;
+    }
+  
+    .post p {
+      font-size: 0.95rem;
+    }
+  }
+    
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+   /* footer */
+   
+   .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px 20px;
+    text-align: center;
+  }
+  .footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #f00; /* o el color principal de tu gym */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  

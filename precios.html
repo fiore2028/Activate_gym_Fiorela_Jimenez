@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos_precios.css">
+    <title>Precios</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+          <div class="logo">
+            <!-- SVG o texto del logo -->
+            <svg id="logo-svg" width="50" height="50" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#f44336" stroke-width="5" fill="none" />
+              <text x="50" y="55" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">ACTIVATE</text>
+            </svg>
+          </div>
+      
+          <nav>
+            <ul class="menu">
+              <li><a href="Index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#">Menu</a>
+                <ul class="mega-menu">
+                  <li><a href="clases.html">Clases</a></li>
+                  <li><a href="entrenadores.html">Entrenadores</a></li>
+                  <li><a href="precios.html">Precios</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <h1>Planes</h1>
+    
+        <!-- Toggle -->
+        <div class="toggle-contenedor">
+            <span>Mensual</span>
+            <label class="switch">
+                <input type="checkbox" id="toggle-precio">
+                <span class="slider"></span>
+            </label>
+            <span>Anual</span>
+        </div>
+    
+        <section class=" precios musculacion">
+            <h2>Musculacion</h2>
+    
+            <!--Tabla de precios-->
+            <div class="tabla-precios">
+                <div class="plan">
+                    <h3>Básico</h3>
+                    <p class="precio" data-mensual="20000" data-anual="25000">$20000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Acceso a zonas comunes">🏋️‍♂️ Gimnasio</span></li>
+                        <li><span class="tooltip" data-tooltip="3 veces por Semana">📅 Clases</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+    
+                <div class="plan destacado">
+                    <h3>Premium</h3>
+                    <p class="precio" data-mensual="30000" data-anual="35000">$30000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Acceso total">💪 Personal Treiner</span></li>
+                        <li><span class="tooltip" data-tooltip="de Lunes a Sabado">🔥 Pase libre</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+    
+                <div class="plan">
+                    <h3>Pase VIP</h3>
+                    <p class="precio" data-mensual="40000" data-anual="45000">$40000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Incluye nutricionista">😎 Servicios extra</span></li>
+                        <li><span class="tooltip" data-tooltip="Acceso ilimitado">✅ Todo incluido</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="precios crossfit">
+            <h2>CrossFit</h2>
+    
+            <div class="tabla-precios">
+                <div class="plan">
+                    <h3>CrossFit Básico</h3>
+                    <p class="precio" data-mensual="8000" data-anual="16000">$8000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="3 clases por Semana">🏋️‍♂️ Entrenos</span></li>
+                        <li><span class="tooltip" data-tooltip="Grupos pequeños">👥 Grupos reducidos</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+    
+                <div class="plan destacado">
+                    <h3>CrossFit Pro</h3>
+                    <p class="precio" data-mensual="15000" data-anual="30000">$15000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Clases todos los días">📅 Días ilimitados</span></li>
+                        <li><span class="tooltip" data-tooltip="Con entrenador personal">👨‍🏫 Asesoramiento</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios Funcional">
+            <h2>Funcional</h2>
+    
+            <div class="tabla-precios">
+                <div class="plan">
+                    <h3>Funcional Básico</h3>
+                    <p class="precio" data-mensual="7000" data-anual="14000">$7000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="3 clases por Semana">🏋️‍♂️ Entrenos</span></li>
+                        <li><span class="tooltip" data-tooltip="guia">🗒️control mensual</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+    
+                <div class="plan destacado">
+                    <h3>Funcional Avanzado</h3>
+                    <p class="precio" data-mensual="9000" data-anual="180000">$9000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Clases todos los días">📅 Días ilimitados</span></li>
+                        <li><span class="tooltip" data-tooltip="Con entrenador personal">👨‍🏫 Asesoramiento</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios yoga-spinning">
+            <h2>Yoga y spinning</h2>
+    
+            <div class="tabla-precios">
+                <div class="plan">
+                    <h3>Yoga</h3>
+                    <p class="precio" data-mensual="8000" data-anual="16000">$8000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Tres veces por semana">🤸‍♂️ Estiramientos, posiciones</span></li>
+                        <li><span class="tooltip" data-tooltip="Despeja tu mente">🧘‍♂️ Meditacion</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+    
+                <div class="plan destacado">
+                    <h3>Spinning</h3>
+                    <p class="precio" data-mensual="5000" data-anual="110000">$5000/mes</p>
+                    <ul>
+                        <li><span class="tooltip" data-tooltip="Dos veces por semana">🚴 Spinning cardio</span></li>
+                        <li><span class="tooltip" data-tooltip="Personal incluido"> 🧑‍🏫 acesosramiento</span></li>
+                    </ul>
+                    <button>Elegir</button>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61574089408111"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/activatecrossfit_tcv?igsh=MWcwOThyaHNla3Nsaw=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Activate. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('toggle-precio');
+        const precios = document.querySelectorAll('.precio');
+      
+        toggle.addEventListener('change', () => {
+          precios.forEach(p => {
+            const mensual = p.dataset.mensual;
+            const anual = p.dataset.anual;
+            p.textContent = toggle.checked ? `$${anual}/año` : `$${mensual}/mes`;
+          });
+        });
+      </script>
+    
+</body>
+</html>

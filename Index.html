@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TP1-Gym</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-header">
+          <div class="logo">
+            <!-- SVG o texto del logo -->
+            <svg id="logo-svg" width="50" height="50" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" stroke="#f44336" stroke-width="5" fill="none" />
+              <text x="50" y="55" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">ACTIVATE</text>
+            </svg>
+          </div>
+      
+          <nav>
+            <ul class="menu">
+              <li><a href="Index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#">Menu</a>
+                <ul class="mega-menu">
+                  <li><a href="clases.html">Clases</a></li>
+                  <li><a href="entrenadores.html">Entrenadores</a></li>
+                  <li><a href="precios.html">Precios</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main>
+
+        <!-- Seccion de Hero -->
+
+        <section class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="img_Videos/precentacion1mp4.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay">
+                <article>
+                    <h1 class="hero-text">¡Entrena con Pasion!!</h1>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seccion de clases -->
+
+        <section class="clases-destacadas">
+            <h2>Nuestras Clases</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="img_Videos/images.jpeg" alt="clase de musculacion">
+                    <h3>Musculacion</h3>
+                </div>
+                <div class="card">
+                    <img src="img_Videos/crossfit_37303.webp" alt="clase de crossfir">
+                    <h3>Crossfit</h3>
+                </div>
+                <div class="card">
+                    <img src="img_Videos/Funcional(1).jpeg" alt="clase funcional">
+                    <h3>Funcional</h3>
+                </div>
+                <div class="card">
+                    <img src="img_Videos/yoga.jpg" alt="clase de yoga">
+                    <h3>Yoga</h3>
+                </div>
+                <div class="card">
+                    <img src="img_Videos/spining.jpeg" alt="clase de spinning">
+                    <h3>Spinning</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seccion de Contador -->
+
+        <section class="contador">
+            <div class="numero">
+                <span class="animado">500+</span>
+                <p>Socios satisfechos</p>
+            </div>
+        </section>
+
+        <!-- Secion de testimonios carrucel-->
+
+        <section class="testimonios">
+            <h2>Las opiniones y testimonios de nuestros clientes</h2>
+            <div class="carrusel">
+                <div class="slide-track">
+                    <div class="testimonio">
+                        <p>Este gimnasio cambió mi vida!!</p>
+                        <p><strong>-Fiorela Jimenez</strong></p>
+                    </div>
+                    <div class="testimonio">
+                        <p>No hay nada mejor que regresar a tu casa después de una gran rutina!!</p>
+                        <p><strong>-Ivana Flores</strong></p>
+                    </div>
+                    <div class="testimonio">
+                        <p>Con la única persona con la que debes competir es contigo mismo</p>
+                        <p><strong>-Marcos Fernandez</strong></p>
+                    </div>
+                    <div class="testimonio">
+                        <p>Una gran experiencia, no me arrepiento de haberme inscrito</p>
+                        <p><strong>-Camila Barcalla</strong></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+          
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+
+            <!--Formulario de subscripcion-->
+            <div class="newsletter">
+                <h3>suscribite a nuestra pagina</h3>
+                <form>
+                    <input type="email" placeholder="Tu correo electronico">
+                    <button type="submit">suscribirse</button>
+                </form>
+            </div>
+
+            <!--Redes sociales-->
+            <div class="redes">
+                <h3>Siguenos</h3>
+                <div class="iconos">
+                    <a href="https://www.facebook.com/profile.php?id=61574089408111"><i class="fab fa-facebook"></i> Facebook </a>
+                    <a href="https://www.instagram.com/activatecrossfit_tcv?igsh=MWcwOThyaHNla3Nsaw=="><i class="fab fa-instagram"></i> Instagram </a>
+                    <a href=""><i class="fab fa-whatsapp"></i> whatsapp </a>
+                </div>
+
+            </div>
+
+            <!--Ubicacion_Mapa-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.90102006472!2d-65.59603962507519!3d-22.091596709245813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9406a586b9853341%3A0xb3490e3732b3a347!2sAct%C3%ADvate%20CrossFit!5e0!3m2!1ses!2sar!4v1744232509750!5m2!1ses!2sar"
+                class="mi_mapa">
+            </iframe>
+        </div>
+    </footer>
+
+</body>
+
+</html>
